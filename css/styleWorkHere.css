@@ -1,0 +1,22 @@
+/* Seccion Dos */
+
+.banner-workHere {
+    background: url('/css/assets/workherebanner.jpg');
+    background-size: cover;
+    height: 900px; /* Altura deseada del banner */
+    text-align: center; /* Para centrar el contenido */
+    font-size: 30px;
+    color: #ffffff; /* Color del texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content-workHere {
+    max-width: 100%;
+    padding: 20px;
+}
+
+.logoBanner img {
+    max-width: 200px;
+}

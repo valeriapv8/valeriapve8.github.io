@@ -1,0 +1,142 @@
+/*Titulo de Contact*/
+
+.banner-contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1482449609509-eae2a7ea42b7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Altura deseada del banner */
+    text-align: center; /* Para centrar el contenido */
+    font-size: 40px;
+    color: #ffffff; /* Color del texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Contactos Nacional*/
+
+.call-center-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e17d0b;
+    color: white;
+    padding: 10px 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.call-center-banner span {
+    margin: 20px 30px;
+}
+
+/*Espacio cotizacion*/
+
+.promo-banner {
+    width: 100%;
+    background-image: url('./assets/fondo-contactos.jpg');
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+
+.promo-content {
+    z-index: 1;
+    padding: 70px 0;
+    position: relative;
+}
+
+.promo-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.promo-content p {
+    font-size: 1.2em;
+    margin: 10px 0 50px;
+}
+
+.promo-content a {
+    background-color: #ffc700;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.promo-content button:hover {
+    background-color: #fdd83c;
+}
+
+/*Apartado Contactos*/
+
+.container-contact {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px 30px;
+    background-color: #fff;
+}
+
+.title-contact {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.title-contact span {
+    color: #e17d0b;
+}
+
+.contact-form-section-contactos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+    margin: 10px;
+    padding: 0 0 0 20px;
+}
+
+.location {
+    padding: 15px;
+}
+
+.location h3 {
+    margin-top: 0;
+    color: #e17d0b;
+    font-size: 1.5em;
+}
+
+.location p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.location i {
+    margin-right: 8px;
+    color: #e17d0b;
+}
+
+.img-md-bol {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.img-md-bol img {
+    max-width: 100%;
+    height: auto;
+}

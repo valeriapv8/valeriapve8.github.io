@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLICE - Servicio de Limpieza</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="css/assets/Logo%20-%20Estrella_Transparente.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Cargando...</p>
+    </div>
+
+    <!-- Barra de Navegacion -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="css/assets/Logo%20-%20Completo_Transparente.png" alt="Logo Empresa de Limpieza">
+            </div>
+            <ul class="nav-links">
+                <li><a class="option" href="index.html">Inicio</a></li>
+                <li><a class="option" href="html/servicios.html">Servicios</a></li>
+                <li><a class="option" href="html/aboutUs.html">Nosotros</a></li>
+                <li><a class="option" href="html/contact.html">Contacto</a></li>
+                <li><a class="botton-Cotizar" href="#formulario"><strong>COTIZAR</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner publicitario -->
+    <div class="banner">
+        <div class="banner-content">
+            <div class="logoBanner">
+                <img src="/css/assets/Logo%20-%20Estrella_Transparente.png" alt="Logo CLICE">
+            </div>
+            <div class="text">
+                <h1>Brilla Como Nunca</h1>
+                <a class="button-cotizacion opciones" href="#formulario"><strong>Quiero una Cotización</strong></a>
+                <a class="button-trabajo opciones" href="html/workHere.html"><strong>Trabaja con Nosotros</strong></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Segmentos de Limpieza -->
+    <div id="SegmentoDeLimpieza" class="banner-section">
+        <div class="banner-item">
+            <img class="img-fluid" src="/css/assets/CLICE-HOGAR.jpeg" alt="Logo CLICE-HOGAR">
+            <div class="content">
+                <h1>CLICE HOGAR</h1>
+                <h3>"Limpieza impecable para tu hogar, <br>como tú lo mereces."</h3>
+                <a href="#">Más Información</a>
+            </div>
+        </div>
+        <div class="banner-item">
+            <img class="img-fluid" src="/css/assets/CLICE-EMPRESA.jpeg" alt="Logo CLICE-EMPRESA">
+            <div class="content">
+                <h1>CLICE EMPRESARIAL</h1>
+                <h3>"Ambientes laborales más limpios, <br>negocios más productivos."</h3>
+                <a href="#">Más Información</a>
+            </div>
+        </div>
+        <div class="banner-item">
+            <img class="img-fluid" src="/css/assets/CLICE-JARDINERIA.jpeg" alt="Logo CLICE-JARDINERIA">
+            <div class="content">
+                <h1>CLICE JARDINERÍA</h1>
+                <h3>"Transformamos tu jardín en un <br>oasis verde."</h3>
+                <a href="#">Más Información</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre Nosotros - Apartado Breve -->
+    <div class="main-container">
+        <div class="intro-section">
+            <img class="presentacion-item" src="/css/assets/presentacion_SobreNosostros.jpeg" alt="Presentación">
+            <div class="intro-content">
+                <h1>Tu Imagen es <br><span class="h1-ColorDiferente">Nuestra Prioridad</span></h1>
+                <p>En Clice Company, entendemos que la reputación de tu empresa es esencial.
+                    Por eso, nos comprometemos a ofrecerte un servicio de calidad que refleje tus valores y objetivos.
+                    Nuestro equipo altamente especializado está listo para brindarte soluciones que superen tus expectativas.</p>
+                <a class="button-elegirnos" href=""><strong>¿Por qué elegirnos?</strong></a>
+            </div>
+        </div>
+        <div class="features-section">
+            <div class="feature-item">
+                <img class="icon-Uno-SN" src="/css/assets/icon/icon_uno.png" alt="Garantía">
+                <div>
+                    <h3>Garantía</h3>
+                    <p>Tenemos un servicio 100% garantizado.
+                        Estamos siempre listos para apoyarte con nuestros servicios de calidad.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <img class="icon-Dos-SN" src="/css/assets/icon/icon_dos.png" alt="Tecnología">
+                <div>
+                    <h3>Tecnología</h3>
+                    <p>Insumos y materiales importados con tecnología de punta y productos especializados.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <img class="icon-Tres-SN" src="/css/assets/icon/icon_tres.png" alt="Experiencia">
+                <div>
+                    <h3>Experiencia</h3>
+                    <p>Con 35 años de experiencia somos los pioneros del rubro.
+                        Con personal altamente especializado y comprometido.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Otros servicios -->
+    <section class="services-section">
+        <div class="container-otros">
+            <div class="row-otros">
+                <div class="col-text">
+                    <h2 class="services-title">Nos Encargamos <span class="highlight">De Todo</span></h2>
+                    <p>¡Descubre nuestro portafolio de servicios! Cubrimos todo, desde tu empresa, hasta tu hogar.</p>
+                    <a href="#SegmentoDeLimpieza" class="services-link">Nuestros Servicios &rarr;</a>
+                </div>
+                <div class="col-cards">
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1587702068694-a909ef4aa346?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Empresa">
+                        </div>
+                        <div class="card-content">
+                            <div class="icon-container">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h2>Empresa</h2>
+                            <p>Creemos planes hechos a medida según tus necesidades y presupuesto.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hogar">
+                        </div>
+                        <div class="card-content">
+                            <div class="icon-container">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h2>Hogar</h2>
+                            <p>Desde los pisos, sillones, cortinas, cocina, desempolvados y más.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="css/assets/OtrosServicios.jpeg" alt="Totes Help">
+                        </div>
+                        <div class="card-content">
+                            <div class="icon-container">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h2>Totes Help</h2>
+                            <p>Desde el cambio de un foco hasta la reestructuración de tu oficina.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario -->
+    <section id="formulario" class="container-formulario">
+        <div class="contact-form-section">
+            <div class="contact-info">
+                <h2>¿Necesitas más información? <br><span>Contáctanos</span></h2>
+                <div class="location">
+                    <h3>La Paz</h3>
+                    <p><i class="fa fa-map-marker"></i> Ave Roma #6815, Z. Obrajes, La Paz</p>
+                    <p><i class="fa fa-envelope"></i> cliceCompanyLP@gmail.com</p>
+                    <p><i class="fa fa-phone"></i> 78465794</p>
+                </div>
+                <div class="location">
+                    <h3>Cochabamba</h3>
+                    <p><i class="fa fa-map-marker"></i> Calle Teofilo Vargas Esq. Julio Mendez #431 Acera Sur</p>
+                    <p><i class="fa fa-envelope"></i> cliceCompanyCBBA@gmail.com</p>
+                    <p><i class="fa fa-phone"></i> 74159842</p>
+                </div>
+                <div class="location">
+                    <h3>Santa Cruz</h3>
+                    <p><i class="fa fa-map-marker"></i> Av. Teniente Vega #227 entre 1er y 2do Anillo Zona Parque Urbano</p>
+                    <p><i class="fa fa-envelope"></i> cliceCompanySCZ@gmail.com</p>
+                    <p><i class="fa fa-phone"></i> 67485124</p>
+                </div>
+                <div class="location">
+                    <h3>¿No encuentras tu ubicación?</h3>
+                    <p><a href="html/contact.html#Contactos-More">Más Contactos</a></p>
+                </div>
+            </div>
+            <div class="form-container">
+                <h2>Cotiza Ahora</h2>
+                <iframe src="https://forms.gle/MiXYymmCaGGrfvjRA" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel de Opiniones -->
+    <div class="carousel-opiniones">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide conteiner-user">
+                    <img class="img-user" alt="Imagen-Usuario" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <h2 class="nombre-user">Juan Carlos</h2>
+                    <p>Excelente servicio, los empleados generaron mucha confianza y el supervisor estuvo pendiente que el trabajo fuera pulcro, todos fueron muy cordiales.</p>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+                <div class="swiper-slide conteiner-user">
+                    <img class="img-user" alt="Imagen-Usuario" src="https://images.unsplash.com/photo-1543269664-7eef42226a21?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <h2 class="nombre-user">Ana María</h2>
+                    <p>La limpieza fue impecable, realmente recomiendo esta empresa a cualquiera que busque un servicio profesional y eficiente.</p>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+                <div class="swiper-slide conteiner-user">
+                    <img class="img-user" alt="Imagen-Usuario" src="https://images.unsplash.com/photo-1599110906885-b024c90c2773?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <h2 class="nombre-user">Carlos Pérez</h2>
+                    <p>El equipo de limpieza fue muy profesional y respetuoso, dejaron mi casa en perfectas condiciones. Sin duda volveré a contratarlos.</p>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+                <div class="swiper-slide conteiner-user">
+                    <img class="img-user" alt="Imagen-Usuario" src="https://images.unsplash.com/photo-1605993439219-9d09d2020fa5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <h2 class="nombre-user">Laura González</h2>
+                    <p>Me encantó el servicio, son muy detallistas y cuidan cada rincón. ¡Muy recomendados!</p>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+            <!-- Agregar botones de navegación
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+                Agregar paginación
+            <div class="swiper-pagination"></div>-->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="footer-logo">CLICE COMPANY</h2>
+                    <ul class="footer-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> 123 Consectetur at ligula 10660
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel:+59173564739">+591 73227427</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:clicecompany@gmail.com">clicecompany@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2 class="footer-title">Productos</h2>
+                    <ul class="footer-list">
+                        <li><a href="#">Suministros de Limpieza</a></li>
+                        <li><a href="#">Servicios de Limpieza</a></li>
+                        <li><a href="#">Jardinería</a></li>
+                        <li><a href="#">Mantenimiento</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2 class="footer-title">Más Información</h2>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Acerca de</a></li>
+                        <li><a href="#trabajaaqui">Trabaja con nosotros</a></li>
+                        <li><a href="html/contact.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="footer-divider"></div>
+                    <ul class="footer-social">
+                        <li>
+                            <a target="_blank" href="http://facebook.com/">
+                                <i class="fab fa-facebook-f fa-lg fa-fw"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/">
+                                <i class="fab fa-instagram fa-lg fa-fw"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/">
+                                <i class="fab fa-twitter fa-lg fa-fw"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/">
+                                <i class="fab fa-linkedin fa-lg fa-fw"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>ProyectoCLICE &copy; 2024 Universidad NUR | CLICE COMPANY por <a rel="sponsored" class="footer-link" target="_blank">Equipo CLICE</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Boton de Whatsapp ChatBot-->
+    <div id="whatsapp-button" class="whatsapp-button">
+        <div class="whatsapp-icon">
+            <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/whatsapp_logo_icon_147205.png" alt="WhatsApp">
+        </div>
+        <div class="whatsapp-chat">
+            <div class="whatsapp-header">
+                <img src="css/assets/Logo%20-%20Completo%20-%20FondoBlanco.jpg" alt="Logo">
+                <span>CLICEBOT</span>
+            </div>
+            <div class="whatsapp-body">
+                <p>Hola, te estás comunicando con <br><strong>CLICE COMPANY</strong> 🌟</p>
+                <p>¿En qué podemos ayudarte?</p>
+            </div>
+            <div class="whatsapp-footer">
+                <a href="https://wa.me/+59173227427?text=Tengo%20una%20pregunta,%20%C2%BFPueden%20ayudarme?" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/scriptIndex.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
